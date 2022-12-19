@@ -1,0 +1,8 @@
+{
+    "mail": "correos.alave@outlook.es",
+    "password:" : "jmcmxgmd00",
+    "smpt": "smtp-mail.outlook.com",
+    "domain" : "outlook.es",
+    "port" : "587",
+    "type": "outlook"
+}

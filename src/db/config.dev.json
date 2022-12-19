@@ -1,0 +1,12 @@
+{
+    "database": {
+        "host": "localhost",
+        "user": "root",
+        "password": "1234",
+        "connectionLimit": 100,
+        "database": "mci_db",
+        "debug": false,
+        "charset": "utf8mb4_unicode_ci",
+        "multipleStatements": true
+    }
+}

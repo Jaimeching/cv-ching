@@ -1,0 +1,133 @@
+extends layout
+block body-content
+    #wrapper
+      nav#nav
+        a.icon.solid.fa-home(href='#home')
+          span Inicio
+        a.icon.solid.fa-address-card(href='#about')
+          span Acerca de mí
+        a.icon.solid.fa-folder(href='#work')
+          span Resumen
+        a.icon.solid.fa-list(href='#technologies')
+          span  Tecnologías
+        a.icon.solid.fa-envelope(href='#contact')
+          span Contacto
+        //- a.icon.solid.fa-share-alt(href='#networks')
+        //-   span Twitter
+      #main
+        article#home.panel.intro
+          header
+            h1 ITI. Jaime Ching
+            p Full Stack Developer
+          a.jumplink.pic(href='#about')
+            span.arrow.icon.solid.fa-chevron-right
+              span Conoce más sobre mi trabajo
+            img(src='images/me.jpg', alt='')
+        | &#x9;&#x9;&#x9;&#x9;
+        article#about.panel
+            header
+                h2 Acerca de mí
+            p
+            |Hola amigo! Déjame presentarme soy   
+            strong Jaime Ching
+            |, un 
+            strong Full Stack Software Developer 
+            |inicié mi carrera profesional estudiando en Mérida, Yucatán, México en la Universidad Tecnológica Metropolitana.
+            |Me gradué en el año de 2019 como Ingeniero en Tecnologías de la Información (ITI), actualmente llevo 5 años en el ramo, con experiencia en diferentes lenguajes de programación tales como: 
+            strong C#, .NET para aplicaciones de escritorio y desarrollo web
+            |, 
+            strong Javascript tanto como de lado del cliente como lado de servidor
+            |en lenguajes de desarrollo web sé utilizar 
+            strong Node JS (3 años), PHP(3 años), React JS(1 año), Python (1 año),  React Native (1 año)  
+            |para aplicaciones móviles hibrídas, Java (1 año para desarrollo de escritorio, 2 años para desarrollo móvil Android), en todos los proyectos en los cuales he participado he utilizado  
+            strong MySQL, MariaDB, SQL Server, MongoDB, Firebase como  
+            |administradores de bases de datos.
+            br
+            |Tengo experiencia configurando y usando servidores 
+            strong Windows y Linux 
+            |para el despliegue y configuración de aplicaciones, sistemas, gestores, etc.
+            br
+            |Mi principal pasión es el diseño de páginas web, es por ello que también adjunto experiencia en uso de 
+            strong CSS, JS, frameworks like Bootstrap, Tailwind, Pico CSS, Jquery, Vue.js, React.js 
+            |.
+        article#work.panel
+          header
+            h2 Resumen
+            p
+            |Debido a cuestiones de confidencialidad, les dejo una lista de las acciones que he realizado en diversos proyectos.
+          section
+            .row
+              ul
+                li Crear, usar y modificar servicio web, tales como API'S, REST y/o SOAP.
+                li Llevar a cabo proyecto de aplicaciones web, básicas o complejas según los requerimientos, hablando de FRONT END y/o BACK END en diferentes lenguajes.
+                li Desarrollo de sistemas de escritorio Windows Form en c# y básico y avanzado en Python.
+                li Desarrollo de algoritmos para data analysis o para cualquier otro uso.
+                li Reporteo de información, cálculos, etc para información almacenadas en diferentes bases de datos.
+                li Diseño y puesta en marcha de landing pages.
+                li Aplicaciones Android, IOS, Hibridas.
+                li Configuración y puesta en marcha de servidores Windows, Linux para el despliegue de aplicaciones.
+                li Gestión de bases de datos, creación de procedimientos almacenados, consultas y subconsultas según sea el caso.
+                li Instalación de gestores de bases de datos.
+                li Creación de algoritmos de señalización para aplicaciones con la tecnología WebRTC. (Streaming)
+                li Creación de servidores con sockets para aplicaciones en tiempo real.
+                li Análisis y uso de información GIS, así como el uso de los servicios de Google Maps y Leaflet.
+                li Y por supuesto! Siempre estoy listo para seguir aprendiendo nuevas tecnologías.
+        article#technologies.panel
+          header
+            h2 Tecnologías
+            p
+            |Aquí podrás observar una lista de las tecnologías que domino
+          section
+            .row
+              ul
+                li C#, .NET 
+                li Javascript Development in general for :
+                  ul  
+                    li Node JS
+                    li React JS 
+                    li Vue JS 
+                    li React Native 
+                li Java for development in :
+                  ul 
+                    li Desktop Development 
+                    li Mobile Android Applications 
+                li Python 
+                li MySQL, Microsoft SQL, MongoDB, Firebase, Oracle for Database Management
+        article#contact.panel
+          header
+            h2 Contáctame
+          form(method='post')#frmContact
+            div
+              .row
+                .col-12
+                  input(type='text', name='name', required, placeholder='Nombre')
+                .col-6.col-12-medium
+                  input(type='text', name='phone', required, placeholder='Télefono')
+                .col-6.col-12-medium
+                  input(type='text', name='email', required, placeholder='Email')
+                .col-12
+                  input(type='text', name='subject', required, placeholder='Objetivo')
+                .col-12
+                  textarea(name='message', required, placeholder='Mensaje', rows='6')
+                .col-12
+                  input(type='submit', value='Enviar Mensaje')
+        //- article#networks.panel
+        //-   header
+        //-     h2 Social Media
+        //-     p
+        //-     |You can reach me in my social media
+        //-   section
+        //-     .row 
+
+      #footer
+        ul.copyright
+          li &copy; Jaime Ching, Full Stack Developer.
+          //- li
+            | Design: 
+            a(href='http://html5up.net') HTML5 UP
+    script(src='assets/js/jquery.min.js')
+    script(src='assets/js/browser.min.js')
+    script(src='assets/js/breakpoints.min.js')
+    script(src='assets/js/util.js')
+    script(src='assets/js/main.js')
+    script(src='assets/js/contact.js')

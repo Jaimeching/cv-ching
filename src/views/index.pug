@@ -1,0 +1,132 @@
+extends layout
+block body-content
+    #wrapper
+      nav#nav
+        a.icon.solid.fa-home(href='#home')
+          span Home
+        a.icon.solid.fa-address-card(href='#about')
+          span About me
+        a.icon.solid.fa-folder(href='#work')
+          span Work
+        a.icon.solid.fa-list(href='#technologies')
+          span  Technologies
+        a.icon.solid.fa-envelope(href='#contact')
+          span Contact
+        //- a.icon.solid.fa-share-alt(href='#networks')
+        //-   span Twitter
+      #main
+        article#home.panel.intro
+          header
+            h1 ITI. Jaime Ching
+            p Full Stack Developer
+          a.jumplink.pic(href='#about')
+            span.arrow.icon.solid.fa-chevron-right
+              span About me
+            img(src='images/me.jpg', alt='')
+        | &#x9;&#x9;&#x9;&#x9;
+        article#about.panel
+            header
+                h2 About me
+            p
+            |Hi stranger! 
+            strong I'm Jaime Ching
+            |, a 
+            strong Full Stack Software Developer
+            |who studied at Mérida, Yucatán, México in the Universidad Tecnológica Metropolitana.
+            |I graduated in 2019 as information technology engineer (ITI in spanish...), currently i have 5 years of experience using differents programation languages as: 
+            strong C#, .NET desktop and web development 
+            |as my main,  
+            strong Javascript client and server side 
+            |as web developer languages 
+            strong as Node JS (3 years), PHP(3 years), React JS(1 year), Python (1 year),  React Native (1 year)
+            |for hybrid mobile application, Java (1 year for desktop application, 2 years for Android development), in many projects i used to use 
+            strong MySQL, MariaDB, SQL Server, MongoDB, Firebase as  
+            |database manager.
+            br
+            |I have knowlegde in setting servers up, currently in .
+            strong Windows and Linux OS 
+            br
+            |I would say that my main passion it is to create web applications, so i have knowlegde in 
+            strong CSS, JS, frameworks like Bootstrap, Tailwind, Pico CSS, Jquery, Vue.js, React.js 
+            |as well.
+        article#work.panel
+          header
+            h2 Work
+            p
+            |Here you have a list with brief description about all i was part of.
+          section
+            .row
+              ul
+                li I can create, use or modify web services / API's, REST or SOAP. 
+                li Web application systems complex or basic, including FRONT END and BACK END in differents languages.
+                li Desktop system in windows form C#, and also basic in python.
+                li Algorythms for data analysis.
+                li Reports for stored data in databases.
+                li Landing pages for every personal reason.
+                li Apps Android, IOS, Hybrid.
+                li Setting up Windows and Linux servers for putting differents systems online.
+                li Database management as create databases, complex stored procedures, queries and subqueries.
+                li Install and setting up database servers.
+                li Create algorythms for signaling servers for create WebRTC applications. (Streaming purpose)
+                li Create sockets servers for realtime applications.
+                li Experience using GIS data, as i can use google maps services, mapbox services and leaflet services.
+                li And of course, I'm always ready for learn new technologies!
+        article#technologies.panel
+          header
+            h2 Technologies
+            p
+            |Here you have a list of all current technologies i work with
+          section
+            .row
+              ul
+                li C#, .NET 
+                li Javascript Development in general for :
+                  ul  
+                    li Node JS
+                    li React JS 
+                    li Vue JS 
+                    li React Native 
+                li Java for development in :
+                  ul 
+                    li Desktop Development 
+                    li Mobile Android Applications 
+                li Python 
+                li MySQL, Microsoft SQL, MongoDB, Firebase, Oracle for Database Management
+        article#contact.panel
+          header
+            h2 Contact Me
+          form(method='post')#frmContact
+            div
+              .row
+                .col-12
+                  input(type='text', name='name', required, placeholder='Name')
+                .col-6.col-12-medium
+                  input(type='text', name='phone', required, placeholder='Phone')
+                .col-6.col-12-medium
+                  input(type='text', name='email', required, placeholder='Email')
+                .col-12
+                  input(type='text', name='subject', required, placeholder='Subject')
+                .col-12
+                  textarea(name='message', required, placeholder='Message', rows='6')
+                .col-12
+                  input(type='submit', value='Send Message')
+        //- article#networks.panel
+        //-   header
+        //-     h2 Social Media
+        //-     p
+        //-     |You can reach me in my social media
+        //-   section
+        //-     .row 
+
+      #footer
+        ul.copyright
+          li &copy; Jaime Ching, Full Stack Developer.
+          //- li
+            | Design: 
+            a(href='http://html5up.net') HTML5 UP
+    script(src='assets/js/jquery.min.js')
+    script(src='assets/js/browser.min.js')
+    script(src='assets/js/breakpoints.min.js')
+    script(src='assets/js/util.js')
+    script(src='assets/js/main.js')
+    script(src='assets/js/contact.js')
